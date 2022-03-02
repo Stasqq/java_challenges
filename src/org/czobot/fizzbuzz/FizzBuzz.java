@@ -1,3 +1,4 @@
+package org.czobot.fizzbuzz;
 import java.util.Scanner;
 
 public class FizzBuzz {
@@ -9,6 +10,8 @@ public class FizzBuzz {
 		System.out.println("Enter FizzBuzz number:");
 		
 		int n = inputScaner.nextInt();
+
+		inputScaner.close();
 		
 		System.out.println("\n\nFizzBuzz:\n");
 		
