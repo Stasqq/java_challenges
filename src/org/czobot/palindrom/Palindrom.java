@@ -1,18 +1,12 @@
 package org.czobot.palindrom;
 
-import java.util.Scanner;
+import org.czobot.chanllenges.scanner.ChallengesScanner;
 
 public class Palindrom {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Enter string to check if it is palindrom:");
-		
-		Scanner inputScaner = new Scanner(System.in);
-		
-		String inputString = inputScaner.nextLine();
-		
-		inputScaner.close();
+		String inputString = ChallengesScanner.getString("Enter string to check if it is palindrom:");
 		
 		System.out.println("PalindromByReverseStringComparison: " + isPalindromByReverseStringComparison(inputString));
 		System.out.println("PalindromByCharComparison: " + isPalindromByCharComparison(inputString));

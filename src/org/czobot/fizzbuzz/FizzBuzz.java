@@ -1,17 +1,11 @@
 package org.czobot.fizzbuzz;
-import java.util.Scanner;
+
+import org.czobot.chanllenges.scanner.ChallengesScanner;
 
 public class FizzBuzz {
 
 	public static void main(String[] args) {
-		
-		Scanner inputScaner = new Scanner(System.in);
-		
-		System.out.println("Enter FizzBuzz number:");
-		
-		int n = inputScaner.nextInt();
-
-		inputScaner.close();
+		int n = ChallengesScanner.getInt("Enter FizzBuzz number:");
 		
 		if(n > 0) {
 			System.out.println("\n\nFizzBuzz:\n");
