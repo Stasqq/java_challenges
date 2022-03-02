@@ -13,11 +13,15 @@ public class FizzBuzz {
 
 		inputScaner.close();
 		
-		System.out.println("\n\nFizzBuzz:\n");
-		
-		fizzBuzz(n);
-		
-		System.out.println("\nEnd");
+		if(n > 0) {
+			System.out.println("\n\nFizzBuzz:\n");
+			
+			fizzBuzz(n);
+			
+			System.out.println("\nEnd");
+		} else {
+			System.out.println("Given number must be greater than 0");
+		}
 	}
 	
 	public static void fizzBuzz(int n) {
